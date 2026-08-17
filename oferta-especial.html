@@ -10,44 +10,35 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
 
     <style>
-        /* Reset */
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            font-family: 'Outfit', sans-serif;
-            color: #4a4a4a;
-            background-color: #fcfbfa;
+            font-family: 'Lato', sans-serif;
+            color: #3d2b1f;
+            background-color: #fdf6ef;
             overflow-x: hidden;
-            position: relative;
-            background-image: url('images/bg.webp');
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
             min-height: 100vh;
         }
 
         img { max-width: 100%; display: block; object-fit: cover; }
 
-        /* ── Page wrapper ── */
         .page-wrapper {
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            padding: 2rem 1.2rem 4rem;
+            padding: 2rem 1rem 4rem;
             min-height: 100vh;
         }
 
         /* ── Main card ── */
         .offer-card {
-            background: rgba(255, 255, 255, 0.92);
-            backdrop-filter: blur(10px);
-            border-radius: 24px;
-            border: 1.5px solid #ecdada;
-            box-shadow: 0 20px 60px rgba(177, 108, 109, 0.12);
+            background: #ffffff;
+            border-radius: 20px;
+            border: 1.5px solid #e0ccb8;
+            box-shadow: 0 20px 60px rgba(107, 76, 59, 0.12);
             width: 100%;
             max-width: 480px;
             display: flex;
@@ -60,7 +51,7 @@
 
         /* ── TOP BADGE ── */
         .badge-top {
-            background: linear-gradient(135deg, #b16c6d, #c98889);
+            background: linear-gradient(135deg, #c87941, #a85e2a);
             color: #fff;
             font-size: 0.72rem;
             font-weight: 700;
@@ -68,25 +59,22 @@
             letter-spacing: 1.5px;
             padding: 0.45rem 1.4rem;
             border-radius: 50px;
-            margin-top: -1px;
             margin-top: 1.6rem;
             display: inline-flex;
             align-items: center;
             gap: 0.4rem;
-            box-shadow: 0 4px 14px rgba(177, 108, 109, 0.35);
+            box-shadow: 0 4px 14px rgba(200, 121, 65, 0.35);
         }
 
         /* ── TIMER ── */
-        .timer-section {
-            padding: 1.2rem 2rem 0;
-        }
+        .timer-section { padding: 1.2rem 2rem 0; }
 
         .timer-label {
             font-size: 0.72rem;
-            font-weight: 600;
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1.5px;
-            color: #9c6c6d;
+            color: #9a7060;
             margin-bottom: 0.6rem;
         }
 
@@ -98,10 +86,11 @@
         }
 
         .timer-block {
-            background: #97B5C6;
+            background: #c87941;
             color: #fff;
+            font-family: 'Oswald', sans-serif;
             font-size: 1.9rem;
-            font-weight: 800;
+            font-weight: 700;
             border-radius: 10px;
             width: 62px;
             height: 62px;
@@ -113,8 +102,9 @@
         }
 
         .timer-block span.unit {
+            font-family: 'Lato', sans-serif;
             font-size: 0.55rem;
-            font-weight: 600;
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.8px;
             opacity: 0.85;
@@ -124,56 +114,53 @@
         .timer-separator {
             font-size: 2rem;
             font-weight: 800;
-            color: #97B5C6;
+            color: #c87941;
             margin-bottom: 8px;
         }
 
         /* ── HEADLINE ── */
         .offer-headline {
+            font-family: 'Playfair Display', serif;
             font-size: 1.65rem;
-            font-weight: 800;
-            color: #b16c6d;
+            font-weight: 700;
+            color: #3d2b1f;
             line-height: 1.25;
             padding: 1.4rem 1.8rem 0;
-            letter-spacing: -0.02em;
         }
 
         .offer-headline .percent {
-            color: #7ee04c;
-            -webkit-text-stroke: 1px #3a7a1a;
+            color: #5a9e4e;
         }
 
         /* ── SUBTITLE ── */
         .offer-subtitle-text {
             font-size: 0.92rem;
-            color: #9c6c6d;
+            color: #7a5a4a;
             line-height: 1.55;
             padding: 0.8rem 1.8rem 0;
         }
 
         .offer-subtitle-text .bold-pink {
             font-weight: 700;
-            color: #b16c6d;
+            color: #a85e2a;
         }
 
         /* ── TRUST LINE ── */
         .trust-line {
             font-size: 0.82rem;
-            color: #97B5C6;
+            color: #c87941;
             font-weight: 600;
             padding: 0.6rem 1.8rem 0;
             line-height: 1.45;
         }
 
-        .trust-line strong {
-            color: #7b9db0;
-        }
+        .trust-line strong { color: #a85e2a; }
 
         /* ── WARNING LINE ── */
         .warning-line {
             font-size: 0.82rem;
             font-weight: 700;
-            color: #b16c6d;
+            color: #a85e2a;
             padding: 0.5rem 1.8rem 0;
         }
 
@@ -181,22 +168,19 @@
         .divider {
             width: calc(100% - 3.6rem);
             height: 1px;
-            background: #ecdada;
+            background: #e0ccb8;
             margin: 1.2rem 1.8rem;
         }
 
         /* ── FEATURES GRID ── */
-        .features-section {
-            width: 100%;
-            padding: 0 1.4rem;
-        }
+        .features-section { width: 100%; padding: 0 1.4rem; }
 
         .features-title {
             font-size: 0.72rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1.4px;
-            color: #97B5C6;
+            color: #c87941;
             margin-bottom: 0.9rem;
             display: flex;
             align-items: center;
@@ -211,8 +195,8 @@
         }
 
         .feature-item {
-            background: #f7f2f2;
-            border: 1.5px solid #ecdada;
+            background: #f5ede0;
+            border: 1.5px solid #e0ccb8;
             border-radius: 12px;
             padding: 0.9rem 0.7rem;
             display: flex;
@@ -221,53 +205,48 @@
             gap: 0.4rem;
         }
 
-        .feature-icon {
-            font-size: 1.3rem;
-        }
+        .feature-icon { font-size: 1.3rem; }
 
         .feature-label {
             font-size: 0.72rem;
-            font-weight: 600;
-            color: #b16c6d;
+            font-weight: 700;
+            color: #6b4c3b;
             line-height: 1.3;
         }
 
         /* ── PRICE AREA ── */
-        .price-section {
-            padding: 1.5rem 1.8rem 0;
-            width: 100%;
-        }
+        .price-section { padding: 1.5rem 1.8rem 0; width: 100%; }
 
         .old-price {
             font-size: 1.1rem;
             font-weight: 700;
-            color: #b16c6d;
+            color: #9a7060;
             text-decoration: line-through;
-            opacity: 0.6;
+            opacity: 0.7;
             margin-bottom: 0.1rem;
         }
 
         .new-price-label {
             font-size: 0.85rem;
-            color: #9c6c6d;
+            color: #7a5a4a;
             font-weight: 500;
             margin-bottom: 0.2rem;
         }
 
         .new-price {
-            font-size: 3.2rem;
-            font-weight: 800;
-            color: #b16c6d;
+            font-family: 'Oswald', sans-serif;
+            font-size: 3.4rem;
+            font-weight: 700;
+            color: #3d2b1f;
             line-height: 1;
-            letter-spacing: -0.03em;
+            letter-spacing: 1px;
         }
 
         .new-price .currency {
-            font-size: 1.4rem;
-            font-weight: 700;
-            vertical-align: top;
-            margin-top: 0.6rem;
-            display: inline-block;
+            font-size: 1.5rem;
+            font-weight: 600;
+            vertical-align: middle;
+            opacity: 0.7;
         }
 
         .savings-badge {
@@ -285,40 +264,37 @@
         }
 
         /* ── CTA BUTTON ── */
-        .cta-wrapper {
-            padding: 1.4rem 1.6rem;
-            width: 100%;
-        }
+        .cta-wrapper { padding: 1.4rem 1.6rem; width: 100%; }
 
         .cta-button {
             display: block;
             width: 100%;
             background: linear-gradient(135deg, #7ee04c, #6ed040);
             color: #1e3d0c;
-            font-family: 'Outfit', sans-serif;
-            font-weight: 800;
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
             font-size: 1rem;
             text-decoration: none;
             padding: 1.15rem 1.5rem;
-            border-radius: 50px;
+            border-radius: 8px;
             box-shadow: 0 8px 25px rgba(126, 224, 76, 0.4);
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.8px;
             border: none;
             cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition: all 0.3s ease;
             animation: pulse-btn 2.5s infinite;
         }
 
         .cta-button:hover {
-            transform: translateY(-4px) scale(1.02);
+            transform: translateY(-3px);
             box-shadow: 0 12px 30px rgba(126, 224, 76, 0.55);
             animation: none;
         }
 
         @keyframes pulse-btn {
             0%, 100% { box-shadow: 0 8px 25px rgba(126, 224, 76, 0.4); }
-            50% { box-shadow: 0 8px 35px rgba(126, 224, 76, 0.65); }
+            50% { box-shadow: 0 8px 35px rgba(126, 224, 76, 0.65); transform: scale(1.01); }
         }
 
         /* ── GUARANTEE ── */
@@ -326,28 +302,21 @@
             display: flex;
             align-items: center;
             gap: 0.75rem;
-            background: #f7f2f2;
-            border: 1.5px solid #ecdada;
+            background: #f5ede0;
+            border: 1.5px solid #e0ccb8;
             border-radius: 12px;
             padding: 0.9rem 1.1rem;
             margin: 0 1.6rem;
             text-align: left;
         }
 
-        .guarantee-icon {
-            font-size: 1.6rem;
-            flex-shrink: 0;
-        }
+        .guarantee-icon { font-size: 1.6rem; flex-shrink: 0; }
 
-        .guarantee-text {
-            font-size: 0.78rem;
-            color: #9c6c6d;
-            line-height: 1.45;
-        }
+        .guarantee-text { font-size: 0.78rem; color: #7a5a4a; line-height: 1.45; }
 
         .guarantee-text strong {
             font-weight: 700;
-            color: #b16c6d;
+            color: #6b4c3b;
             display: block;
             margin-bottom: 0.1rem;
         }
@@ -364,17 +333,16 @@
             width: 100%;
         }
 
-        .alert-box strong {
-            font-weight: 700;
-        }
+        .alert-box strong { font-weight: 700; }
 
         /* ── BRAND WATERMARK ── */
         .brand-footer {
             padding: 1rem 0 0.5rem;
-            font-family: 'Great Vibes', cursive;
-            font-size: 1.4rem;
-            color: #b16c6d;
-            opacity: 0.5;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.3rem;
+            color: #c87941;
+            opacity: 0.6;
         }
 
         /* ── DECORATIVE BLOBS ── */
@@ -383,7 +351,7 @@
             border-radius: 50%;
             filter: blur(70px);
             z-index: -1;
-            opacity: 0.45;
+            opacity: 0.4;
             pointer-events: none;
         }
 
@@ -392,7 +360,7 @@
             left: -10%;
             width: 340px;
             height: 340px;
-            background: #ffd6d6;
+            background: #e8c9a0;
         }
 
         .blob-blue {
@@ -400,20 +368,17 @@
             right: -10%;
             width: 420px;
             height: 420px;
-            background: #e6f7ff;
+            background: #f5ede0;
         }
 
         /* ── ANIMATE ON LOAD ── */
-        .offer-card {
-            animation: fadeUp 0.5s ease both;
-        }
+        .offer-card { animation: fadeUp 0.5s ease both; }
 
         @keyframes fadeUp {
             from { opacity: 0; transform: translateY(30px); }
             to   { opacity: 1; transform: translateY(0); }
         }
 
-        /* ── RESPONSIVE ── */
         @media (min-width: 520px) {
             .offer-headline { font-size: 2rem; }
             .new-price { font-size: 3.8rem; }
@@ -487,7 +452,7 @@
 
             <!-- CTA BUTTON -->
             <div class="cta-wrapper">
-                <a href="https://checkout.gessolucrativo.online/VCCL1O8SCXDB" class="cta-button">
+                <a href="https://checkout.gessolucrativo.online/VCCL1O8SD3OJ" class="cta-button">
                     Sim! Quero o Desconto de 50% Agora
                 </a>
             </div>
